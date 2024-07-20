@@ -5,7 +5,7 @@ let employees = [
     {id: 3, name: "karen", age: "19", profession: "admin"}
 ];
 
-// 1. PrintDeveloperbyMap - console.log all the employees which have the profession of developer using the map function.
+// 1. PrintDeveloperbyMap 
 function PrintDeveloperbyMap() {
     employees.map(employee => {
         if (employee.profession === "developer") {
@@ -14,7 +14,7 @@ function PrintDeveloperbyMap() {
     });
 }
 
-// 2. PrintDeveloperbyForEach - console.log all the employees which have the profession of developer using the forEach function.
+// 2. PrintDeveloperbyForEach 
 function PrintDeveloperbyForEach() {
     employees.forEach(employee => {
         if (employee.profession === "developer") {
@@ -23,20 +23,20 @@ function PrintDeveloperbyForEach() {
     });
 }
 
-// 3. addData - In this function make another such employee object and append that in this array. Example - push this in the array - {id: 4, name: "susan", age: "20", profession: "intern"} and then console.log it.
+// 3. addData 
 function addData() {
     const newEmployee = {id: 4, name: "susan", age: "20", profession: "intern"};
     employees.push(newEmployee);
     console.log(employees);
 }
 
-// 4. removeAdmin - In this function remove the object where the profession is admin. console.log the changed array.
+// 4. removeAdmin 
 function removeAdmin() {
     employees = employees.filter(employee => employee.profession !== "admin");
     console.log(employees);
 }
 
-// 5. ConcatinateArray - Make another array with 3 objects just like the one in the above given array. The objects should be different, with different ids and all other parameters should be different too. Then concatinate these 2 arrays, and console.log
+// 5. ConcatinateArray 
 function ConcatinateArray() {
     const newEmployees = [
         {id: 5, name: "lisa", age: "22", profession: "designer"},
